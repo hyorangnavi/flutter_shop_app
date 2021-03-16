@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shop_app/components/custom_suffix_icon.dart';
-import 'package:flutter_shop_app/components/default_button.dart';
-import 'package:flutter_shop_app/components/form_error.dart';
+import 'package:flutter_shop_app/components/no_account_text.dart';
 import 'package:flutter_shop_app/components/social_card.dart';
-import 'package:flutter_shop_app/constants.dart';
 import 'package:flutter_shop_app/size_config.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import 'sign_form.dart';
 
@@ -53,18 +49,7 @@ class Body extends StatelessWidget {
                 ],
               ),
               SizedBox(height: getProportionateScreenHeight(20)),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text("Don't have an account?",
-                      style:
-                          TextStyle(fontSize: getProportionateScreenWidth(16))),
-                  Text("Sign Up?",
-                      style: TextStyle(
-                          fontSize: getProportionateScreenWidth(16),
-                          color: kPrimaryColor))
-                ],
-              )
+              NoAccountText()
             ]),
           ),
         ),
